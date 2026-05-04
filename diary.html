@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+ <html>
+ 
+ <head>
+
+ <title>My Diary</title>
+
+ <link rel="stylesheet"href="style.css">
+
+ <style>
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #CFECEC;
+ }
+ header {
+  font-family: Arial, sans-serif;
+  padding: 5px;
+  color: black;
+  background-color: #FBD5AB;
+  height: 110px;
+  text-align: center;
+ }
+ nav a {
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;           
+  width: 100%;              
+  color: black;
+  margin:0 10px;
+  text-margin: none;
+ }
+ nav a:hover {
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #966F33;
+  color: white;
+  background-color: #966F33;
+  margin: 10px;
+  text-margin: none;
+ }
+ section{
+  align: left;
+  padding: 20px;
+  font-size: 20px;
+  background: #FBD5AB;
+  margin: 20px;
+  border-radius: 25px;
+  height: 200%;
+ }
+ image{
+  margin: 10px;
+  border-radius 5px  
+  width: 20%;   
+  height: 20%;   
+ }}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 300;
+  height: 300;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+ </style>
+ </head>
+ 
+ <body>
+ <header>
+  
+ <h1>𝓓𝓲𝓪𝓻𝔂 𝓔𝓷𝓽𝓻𝓲𝓮𝓼</h1>
+
+ <nav>
+   <a href="index.html">Home</a>
+
+   <a href="about.html">About</a>
+
+   <a href="diary.html">Diary</a>
+
+   <a href="gallery.html">Gallery</a>
+
+   <a href="contact.html">Contact</a>
+
+ </nav>
+
+ </header>
+
+ <section>
+  <h3><b>My First Day</b> (<b>2ND Sem</b>)</h3>
+
+  <p>Today I started my College Journey and the return
+     to school for <b>2ND SEM</b>. I felt very nervous 
+     cause for me its hard to make a first expression. 
+      As I questioned myself that <u>Will/Will not embrassed myself 
+     infront of new faces?</u>, <u>Is the introduction 
+      will be Infront of class?</u>, or <u>Is my Uniform a mess?</u><b>.</b></p>
+  <hr>
+
+  <h3><b>Prelim-Exam Week</b> (<b>02/02/26</b>)</h3>
+
+  <p>the Beginnning of a Nightmare and it's very stressful, I haven't slept 
+     for the whole day just so can atleast pass my examination and by the 
+     the when entering the class, I was shocked and surpise to learn that the
+      exam is actually, Writting on a <b><u>1/2 Lengthwise Yellowpad with Multiple 
+     Choices</b></u> which got me <u>Annoyed</u> cause i was expecting like a <u>rewrite coding
+     to identification questions</u> and for me its a "<b><u>𝓜𝓲𝓻𝓪𝓬𝓵𝓮 𝓲𝓷 𝓓𝓲𝓼𝓰𝓾𝓲𝓼𝓮</u></b>"
+      cause that's what i wanted which is just multiple questions so atleast i wont't 
+     failed very hard on the exam which i admit i didnt get much score, But it was enough 
+     for me to earn a "<b>PASSED</b>" on my Prelim Grade Score.</p>
+  <hr>
+
+  <h3><b>2026 Sportfest Begining</b> (<b>02/02/26</b>)</h3>
+   
+  <img id="myImg1" src="Sportfest_1.jpg" alt="Sportfest #1" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg2" src="Sportfest_2.jpg" alt="Sportfest #2" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg3" src="Sportfest_3.jpg" alt="Sportfest #3" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg4" src="Sportfest_4.jpg" alt="Sportfest #4" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+ 
+  <img id="myImg5" src="Sportfest_5.jpg" alt="Sportfest #5" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg6" src="Sportfest_6.jpg" alt="Sportfest #6" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg7" src="Sportfest_7.jpg" alt="Sportfest #7" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <p>Today marks the "<b>First day of Sportsfest</b>" as I enter the school. The decorations are up, 
+     showcasing <u>the vibrant colors of each team, and large groups of students have gathered around 
+     the main building</u>. Soon, the "<b>Sportsfest-March</b>" begins, with all the <u>students proudly cheering for 
+     their respective teams</u> as we move toward "<b>North Olympus</b>", where the event kicks off. After that, the 
+     cheerleading team puts on an amazing performance. Unfortunately, <u>I missed most of the games at North Olympus 
+     because my phone battery died</u>, leaving me no choice but to return to school to charge it.</p>
+  
+  <hr>
+ 
+  <h3><b>Suprised/Sudden School Quake Drill</b> (<b>03/12/26</b>)</h3>
+  
+  <img id="myImg8" src="Quake_Drill_1.jpg" alt="Surpise Quake Drill#1" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg9" src="Quake_Drill_2.jpg" alt="Surpise Quake Drill#2" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg10" src="Quake_Drill_3.jpg" alt="Surpise Quake Drill#3" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <p>On the day of the we thought was a normal class, an <u>unexpected <b>"Earthquake Simulation"</b> was conducted shortly 
+     after the commencement of class</u>. <u><b>"Students"</b> were instructed to either hold hands or use objects to shield their 
+     heads while evacuating the school in an orderly manner</u>. Following this instruction, <u>we exited the building and 
+     remained outside for approximately five minutes until the drill concluded</u>. Subsequently, <u><b>"Faculty Members"</b> were 
+     requested to assemble and proceed toward the central area of the school</u>. Later in the same day, <u>an announcement 
+     was made to commend the students for their adherence to the safety protocols during the earthquake drill and for 
+     successfully navigating the surprise exercise</u>.</p>
+ <hr>
+
+ <h3><b>Film Project Day#1</b> (<b>03/26/26</b>)</h3>
+ 
+  <p>On the first day, <b>"One of my Professors"</b> <u>announced that instead of a written exam, we would create a film project titled <b>"Ang Trahedya Ni Bert."</b></u> 
+     <u>I volunteered to play a side character named <b>"Eloy"</b></u>. <u>The film needed to be completed by May 8.</u> Some students agreed to act in the film, 
+     while others were assigned to make props.</p>
+   
+  <p><u>During the first day of filming, I felt a bit confused—not only about the filming location but also because the script was in <b>"Tagalog"</b></u>. <u>Although I am <b>"Filipino"</b>, 
+     I mostly speak <b>"English"</b> and <b>"struggle with Tagalog"</b></u>. <u>Many scenes took longer to finish due to language mistakes and forgotten lines</u>. However, I believe we will 
+     meet the deadline and complete filming. <u>I hope my acting skills were at least satisfactory during the shoot</u>.</p>
+ <hr>
+
+ <script>
+
+var modal = document.getElementById('myModal');
+
+/* myImg1 */
+var img = document.getElementById('myImg1');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg2 */
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg3 */
+var img = document.getElementById('myImg3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg4 */
+var img = document.getElementById('myImg4');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg5 */
+var img = document.getElementById('myImg5');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg6 */
+var img = document.getElementById('myImg6');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg7 */
+var img = document.getElementById('myImg7');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg8 */
+var img = document.getElementById('myImg8');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg9 */
+var img = document.getElementById('myImg9');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg10 */
+var img = document.getElementById('myImg10');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+ </script>
+ </section>  
+ </body>
+</html>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+ <html>
+ 
+ <head>
+
+ <title>Gallery</title>
+
+ <link rel="stylesheet"href="style.css">
+
+ <style>
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #CFECEC;
+ }
+ header {
+  font-family: Arial, sans-serif;
+  padding: 5px;
+  color: black;
+  background-color: #FBD5AB;
+  height: 110px;
+  text-align: center;
+ }
+ nav a {
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;           
+  width: 100%;              
+  color: black;
+  margin:0 10px;
+  text-margin: none;
+ }
+ nav a:hover {
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #966F33;
+  color: white;
+  background-color: #966F33;
+  margin: 10px;
+ text-margin: none;
+ }
+ section{
+  align: left;
+  padding: 20px;
+  font-size: 20px;
+  background: #FBD5AB;
+  margin: 20px;
+  border-radius: 25px;
+ }
+ image{
+  margin: 10px;
+  border-radius 5px
+ }}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 300;
+  height: 300;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+/* Trading Lavender Dragon & Rainbow Dragon */
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+ </style>
+ </head>
+ 
+ <body>
+ <header>
+  
+ <h1>𝓖𝓪𝓵𝓵𝓮𝓻𝔂</h1>
+
+ <nav>
+   <a href="index.html">Home</a>
+
+   <a href="about.html">About</a>
+
+   <a href="diary.html">Diary</a>
+
+   <a href="gallery.html">Gallery</a>
+
+   <a href="contact.html">Contact</a>
+
+ </nav>
+
+ </header>
+
+ <section>
+  <img id="myImg" src="Profile Selfie.jpg" alt="First Project Selfie, (03/23/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg2" src="JungleProfile1.jpg" alt="JungleProfile_IconPic, (03/24/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg3" src="Sportfest_1.jpg" alt="Sportfest #1, (03/02/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg4" src="Sportfest_2.jpg" alt="Sportfest #2, (03/02/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg5" src="Sportfest_3.jpg" alt="Sportfest #3, (03/02/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg6" src="Sportfest_4.jpg" alt="Sportfest #4, (03/02/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg7" src="Sportfest_5.jpg" alt="Sportfest #5, (03/02/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg8" src="Sportfest_6.jpg" alt="Sportfest #6, (03/02/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg9" src="Sportfest_7.jpg" alt="Sportfest #7, (03/02/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg10" src="Quake_Drill_1.jpg" alt="Surpise Quake Drill#1, (03/12/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg11" src="Quake_Drill_2.jpg" alt="Surpise Quake Drill#2, (03/12/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg12" src="Quake_Drill_3.jpg" alt="Surpise Quake Drill#3, (03/12/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg13" src="FilmProject_D1.jpg" alt="Film Project Day#1, (03/26/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg14" src="Phone_SelfieClassmate.jpg" alt="Classmates Borrowed my Phone and Snuck a Selfie, (04/15/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg15" src="AquaGuard_Project_1.jpg" alt="GroupProject Exhibition#1, (04/23/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg16" src="AquaGuard_Project_2.jpg" alt="GroupProject Exhibition#2, (04/23/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg17" src="Free_Ice_Cream_1.jpg" alt="Free Ice Cream Outside at my College University#1, (04/23/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg18" src="Free_Ice_Cream_2.jpg" alt="Free Ice Cream Outside at my College University#2, (04/23/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg19" src="Award_Earning_P1.jpg" alt="Won Group Innovation Exhibition 3rd Place #1, (04/24/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg20" src="Award_Earning_P2.jpg" alt="Won Group Innovation Exhibition 3rd Place #2, (04/24/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+
+  <img id="myImg21" src="Award_Earning_P3.jpg" alt="Group Innovation Exhibition 3rd Place Award & Certification of Recognition, (04/24/2026)" width="300" height="300">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  </div>
+  <script>
+
+var modal = document.getElementById('myModal');
+
+/* myImg */
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg2 */
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg3 */
+var img = document.getElementById('myImg3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg4 */
+var img = document.getElementById('myImg4');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg5 */
+var img = document.getElementById('myImg5');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg6 */
+var img = document.getElementById('myImg6');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg7 */
+var img = document.getElementById('myImg7');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg8 */
+var img = document.getElementById('myImg8');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg9 */
+var img = document.getElementById('myImg9');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg10 */
+var img = document.getElementById('myImg10');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg11 */
+var img = document.getElementById('myImg11');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg12 */
+var img = document.getElementById('myImg12');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg13 */
+var img = document.getElementById('myImg13');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg14 */
+var img = document.getElementById('myImg14');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg15 */
+var img = document.getElementById('myImg15');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg16 */
+var img = document.getElementById('myImg16');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg17 */
+var img = document.getElementById('myImg17');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+var modal = document.getElementById('myModal');
+
+/* myImg18 */
+var img = document.getElementById('myImg18');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('myModal');
+
+/* myImg19 */
+var img = document.getElementById('myImg19');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg20 */
+var img = document.getElementById('myImg20');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+var modal = document.getElementById('myModal');
+
+/* myImg21 */
+var img = document.getElementById('myImg21');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+ </section>  
+ </body>
+</html>
